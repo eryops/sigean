@@ -1,14 +1,13 @@
 #hero {
-  // height: 100vh;
-  // z-index: 1;
-  // position: relative;
-  // .content {
-  //   max-width: 100%;
-  //   background: linear-gradient(rgba($color-font, 0.5),rgba($color-font, 0.5));
-  //   display: flex;
-  //   justify-content: flex-end;
-  //   align-items: center;
-  //   flex-flow: column;
-  //   padding: 0;
-  // }
+  height: 100vh;
+  z-index: 1;
+  position: relative;
+  .content {
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow: column;
+    padding: 0;
+  }
 }
