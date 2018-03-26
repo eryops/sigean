@@ -1,0 +1,13 @@
+#work {
+  background-color: #d7d7d7;
+  .content {
+    @media (min-width: $s) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+.work-experience {
+  padding-bottom: $space;
+  max-width: 40rem;
+}

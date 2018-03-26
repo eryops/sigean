@@ -1,0 +1,21 @@
+.chevron-down {
+  padding-bottom: 6vh;
+	&::before {
+		border-style: solid;
+		border-color: $color-light;
+		border-width: $chevron-thicknes $chevron-thicknes 0 0;
+		content: '';
+		display: inline-block;
+		height: $chevron-size;
+		left: 0;
+		position: relative;
+		top: 0;
+		vertical-align: top;
+		width: $chevron-size;
+	}
+	&.bounce {
+		&::before {
+			animation: bounceRotate135 1s infinite alternate;
+		}
+	}
+}

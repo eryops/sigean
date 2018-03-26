@@ -1,0 +1,9 @@
+#about {
+  padding: $space*2;
+  @media (min-width: $s) {
+    .content {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

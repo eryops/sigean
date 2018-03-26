@@ -1,0 +1,36 @@
+.invisible-transition {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .3s ease-in-out;
+
+  &.scale {
+    transform: scale(0, 0);
+  }
+}
+.visible-transition {
+  visibility: visible;
+  opacity: 1;
+  transition: all 1s ease-in-out;
+
+  &.scale {
+    transform: scale(1, 1);
+  }
+}
+.slide-in-right {
+  animation: slideInRight 1s ease both;
+}
+.slide-out-right{
+  animation: slideOutRight 1s ease both;
+}
+.slide-in-left {
+  animation: slideInLeft 1s ease both;
+}
+.slide-out-left{
+  animation: slideOutLeft 1s ease both;
+}
+.slide-in-top {
+  animation: slideInTop 1s ease both;
+}
+.slide-out-top{
+  animation: slideOutTop 1s ease both;
+}
