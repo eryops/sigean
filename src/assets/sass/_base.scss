@@ -15,6 +15,9 @@ body {
   background-color: #fff;
   overflow-x: hidden;
 }
+#app {
+  position: relative;
+}
 .content {
   height: 100%;
   max-width: 75rem;

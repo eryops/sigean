@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-	  <i-header/>
     <s-hero/>
+	  <i-header/>
     <s-about/>
 	  <i-footer/>
   </div>
@@ -23,10 +23,29 @@
 		  IFooter,
       SHero,
       SAbout
-	  }
+	  },
+    methods: {
+      stickyMenu() {
+        var headerNav = document.getElementById('page-header');
+        var sticky = headerNav.offsetTop;
+
+        window.addEventListener('scroll', function () {
+          console.log(sticky);
+          if(window.pageYOffset >= sticky) {
+            headerNav.classList.add('sticky');
+          }
+          else {
+            headerNav.classList.remove('sticky');
+          }
+        })
+      }
+    },
+    mounted() {
+      this.stickyMenu();
+    }
 	}
 </script>
 
 <style lang="scss">
-	@import "./assets/sass/app";
+	@import "./assets/sass/main";
 </style>

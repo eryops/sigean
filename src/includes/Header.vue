@@ -1,5 +1,5 @@
 <template>
-  <header class="page-header">
+  <header id="page-header">
     <button type="button"
             class="mobile-menu-button"
             title="Öppna menyn"
@@ -43,16 +43,6 @@
 			return {
 				mobileMenuOpend: false
 			}
-		},
-    methods: {
-      toggleMenu() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-      }
-    }
+		}
   }
 </script>
