@@ -1,12 +1,39 @@
 #page-header {
-  background-color: $color-dark;
+  background-color: #A0FCD6;
   top: 0;
   right: 0;
   left: 0;
   z-index: 100;
+  position: fixed;
+  @media (min-width: $m) {
+    position: relative;
+    height: $height-header;
+    &:before {
+      content: '';
+      position: absolute;
+      top: -60%;
+      left: 0;
+      width: 50%;
+      height: 10vw;
+      background-color: inherit;
+      transform: skewY(7deg);
+      z-index: -1;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: -60%;
+      right: 0;
+      width: 50%;
+      height: 10vw;
+      background-color: inherit;
+      transform: skewY(-7deg);
+    }
+  }
   &.sticky {
-    position: fixed;
-
+    @media (min-width: $m) {
+      position: fixed;
+    }
   }
   .mobile-menu-button {
     display: inline-block;

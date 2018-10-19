@@ -15,7 +15,7 @@ polyfill();
 import VueScrollTo from 'vue-scrollto'
 
 // change offset depending on viewport
-var windowWidth = window.innerWidth;
+var windowWidth = window.matchMedia;
 if(windowWidth >= 992){
 	var scrollOffset = -80;
 }else{

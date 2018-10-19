@@ -1,4 +1,5 @@
 .chevron-down {
+  display: none;
   padding-bottom: 6vh;
 	&::before {
 		border-style: solid;
@@ -18,4 +19,7 @@
 			animation: bounceRotate135 1s infinite alternate;
 		}
 	}
+  @media (min-width: $m) {
+    display: block;
+  }
 }
