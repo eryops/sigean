@@ -30,9 +30,9 @@ ol, ul {
 h1 {
   font-size: 8vw;
   color: red;
-  padding-bottom: 33vh;
   @media (min-width: $m) {
     font-size: 2rem;
+    padding-bottom: 33vh;
   }
 }
 h2 {

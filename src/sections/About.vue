@@ -1,7 +1,9 @@
 <template>
   <section id="about">
     <scroll-view tag="div" :offset="10" class="content">
-      <template slot-scope="visibility">
+      <template slot-scope="visibility"
+                @isNotVisible="markerNotVisible"
+                :name="marker">
         <div class="information">
           <c-about-text key="about"
                         :visible="visibility.about"/>
@@ -22,6 +24,11 @@
     components: {
       CAboutText,
       CKnowledge
+    },
+    methods: {
+      markerNotVisible() {
+        console.log(`marker is no longer visible!`)
+      }
     }
   }
 </script>

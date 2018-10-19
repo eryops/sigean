@@ -1,13 +1,19 @@
 #hero {
-  height: 100vh;
+  height: 75vw;
   z-index: 1;
   position: relative;
   .content {
     max-width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     flex-flow: column;
     padding: 0;
+    @media (min-width: $m) {
+      justify-content: flex-end;
+    }
+  }
+  @media (min-width: $m) {
+    height: 100vh;
   }
 }

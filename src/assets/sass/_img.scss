@@ -1,10 +1,13 @@
-.bg-fixed {
-  background-attachment: fixed;
+.bg-m-fixed {
+  @media (min-width: $m) {
+    background-attachment: fixed;
+  }
 }
 .bg-img-cover {
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: bottom
 }
 .bg-hero {
   background-image: url('./assets/img/terassen.jpg');

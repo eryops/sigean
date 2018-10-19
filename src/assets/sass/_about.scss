@@ -1,9 +1,17 @@
 #about {
-  padding: $space*2;
-  @media (min-width: $s) {
-    .content {
+  .content {
+    @media (min-width: $s) {
       display: flex;
       justify-content: space-between;
     }
   }
+  @media (min-width: $m) {
+    padding: $space*2;
+  }
+  &.sticky {
+    @media (min-width: $m) {
+      padding-top: $height-header+($space*2);
+    }
+  }
+
 }
