@@ -1,12 +1,55 @@
+/*
+  Bootstrap variable for grid
+*/
+$enable-grid-classes: true;
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 36rem,
+  md: 48rem,
+  lg: 62rem,
+  xl: 75rem
+);
+
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints);
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 34rem,
+  md: 45rem,
+  lg: 60rem,
+  xl: 72rem
+);
+
+@include _assert-ascending($container-max-widths, "$container-max-widths");
+
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:      12;
+$grid-gutter-width: 1.875rem;
+
+
+/*
+ End Bootstrap variables
+*/
+
 $font-headlines: 'Courgette', cursive;
 $font-base: 'Play', sans-serif;
 
-//breakpoints
-$xs: 28rem;
-$s: 50rem;
-$m: 62rem;
-
-$space: 1rem;
+$space: $grid-gutter-width/2;
 
 $color-font: #18191b;
 $color-light: #fff;

@@ -31,6 +31,9 @@ Vue.use(VueScrollTo, {
 import ScrollView from 'vue-scrollview'
 Vue.use(ScrollView)
 
+import BootstrapVue from 'bootstrap-vue'
+Vue.use(BootstrapVue)
+
 /* eslint-disable no-new */
 new Vue({
 	el: '#app',

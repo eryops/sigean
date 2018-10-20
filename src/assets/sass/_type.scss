@@ -30,7 +30,7 @@ ol, ul {
 h1 {
   font-size: 8vw;
   color: red;
-  @media (min-width: $m) {
+  @include media-breakpoint-up(md) {
     font-size: 2rem;
     padding-bottom: 33vh;
   }
@@ -38,13 +38,13 @@ h1 {
 h2 {
   font-size: 5vw;
   padding-bottom: $space;
-  @media (min-width: $s) {
+  @include media-breakpoint-up(sm) {
     font-size: 2.2rem;
   }
 }
 h3 {
   font-size: 4vw;
-  @media (min-width: $s) {
+  @include media-breakpoint-up(sm) {
     font-size: 1.5rem;
   }
 }

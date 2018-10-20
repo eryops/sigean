@@ -1,5 +1,5 @@
 .bg-m-fixed {
-  @media (min-width: $m) {
+  @include media-breakpoint-up(md) {
     background-attachment: fixed;
   }
 }
@@ -10,10 +10,10 @@
   background-position: bottom
 }
 .bg-hero {
-  background-image: url('./assets/img/terassen.jpg');
+  background-image: url('./assets/img/start.jpg');
 }
 .bg-about {
-  background-image: url('./assets/img/stad5.jpg');
+  background-image: url('./assets/img/torghanel.jpg');
   min-height: 100%;
   width: 100%;
 }

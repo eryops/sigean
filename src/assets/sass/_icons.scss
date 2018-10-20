@@ -19,7 +19,7 @@
 			animation: bounceRotate135 1s infinite alternate;
 		}
 	}
-  @media (min-width: $m) {
+  @include media-breakpoint-up(md) {
     display: block;
   }
 }

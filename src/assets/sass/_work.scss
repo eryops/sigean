@@ -1,7 +1,7 @@
 #work {
   background-color: #d7d7d7;
   .content {
-    @media (min-width: $s) {
+    @include media-breakpoint-up(sm) {
       display: flex;
       justify-content: space-between;
     }

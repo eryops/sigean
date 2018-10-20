@@ -5,33 +5,33 @@
   left: 0;
   z-index: 100;
   position: fixed;
-  @media (min-width: $m) {
+  @include media-breakpoint-up(md) {
     position: relative;
     height: $height-header;
-    &:before {
-      content: '';
-      position: absolute;
-      top: -60%;
-      left: 0;
-      width: 50%;
-      height: 10vw;
-      background-color: inherit;
-      transform: skewY(7deg);
-      z-index: -1;
-    }
-    &:after {
-      content: '';
-      position: absolute;
-      top: -60%;
-      right: 0;
-      width: 50%;
-      height: 10vw;
-      background-color: inherit;
-      transform: skewY(-7deg);
-    }
+    // &:before {
+    //   content: '';
+    //   position: absolute;
+    //   top: -60%;
+    //   left: 0;
+    //   width: 50%;
+    //   height: 10vw;
+    //   background-color: inherit;
+    //   transform: skewY(7deg);
+    //   z-index: -1;
+    // }
+    // &:after {
+    //   content: '';
+    //   position: absolute;
+    //   top: -60%;
+    //   right: 0;
+    //   width: 50%;
+    //   height: 10vw;
+    //   background-color: inherit;
+    //   transform: skewY(-7deg);
+    // }
   }
   &.sticky {
-    @media (min-width: $m) {
+    @include media-breakpoint-up(md) {
       position: fixed;
     }
   }
@@ -40,20 +40,20 @@
     position: absolute;
     right: 0;
     z-index: 150;
-    @media (min-width: $m) {
+    @include media-breakpoint-up(md) {
       display: none;
     }
   }
   .mobile-menu-closed {
     display: none;
-    @media (min-width: $m) {
+    @include media-breakpoint-up(md) {
       display: flex;
     }
   }
   .mobile-menu-opend {
     display: flex;
     flex-direction: column;
-    @media (min-width: $m) {
+    @include media-breakpoint-up(md) {
       display: flex;
       flex-direction: row;
     }

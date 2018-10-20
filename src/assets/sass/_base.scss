@@ -27,7 +27,7 @@ body {
 }
 
 .information {
-  @media (min-width: $s) {
+  @include media-breakpoint-up(sm) {
     max-width: 60%;
   }
 }

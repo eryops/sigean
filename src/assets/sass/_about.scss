@@ -1,15 +1,16 @@
 #about {
+  opacity: 0;
   .content {
-    @media (min-width: $s) {
+    @include media-breakpoint-up(sm) {
       display: flex;
       justify-content: space-between;
     }
   }
-  @media (min-width: $m) {
+  @include media-breakpoint-up(md) {
     padding: $space*2;
   }
   &.sticky {
-    @media (min-width: $m) {
+    @include media-breakpoint-up(md) {
       padding-top: $height-header+($space*2);
     }
   }
