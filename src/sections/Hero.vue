@@ -2,8 +2,9 @@
   <div id="hero">
     <div class="bg-img-cover bg-m-fixed bg-hero">
       <div class="content">
-        <h1>Hyr hus i Sigean</h1>
-        <span class="chevron-down bounce"></span>
+        <a href="#about" title="hoppa till innehållet" v-scroll-to="'#about'">
+          <span class="chevron-down bounce"></span>
+        </a>
       </div>
     </div>
   </div>

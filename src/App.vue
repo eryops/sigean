@@ -26,12 +26,12 @@
 	  },
     methods: {
       stickyMenu() {
-        var headerNav = document.getElementById('page-header');
-        var about = document.getElementById('about');
-        var sticky = headerNav.offsetTop;
+        var headerNav    = document.getElementById('page-header');
+        var about        = document.getElementById('about');
+        var aboutSlideIn = about.offsetTop - (window.innerHeight - 150);
+        var sticky       = headerNav.offsetTop;
 
         window.addEventListener('scroll', function () {
-          console.log(sticky);
           if(window.pageYOffset >= sticky) {
             headerNav.classList.add('sticky');
             about.classList.add('sticky');
@@ -39,6 +39,9 @@
           else {
             headerNav.classList.remove('sticky');
             about.classList.remove('sticky');
+          }
+          if(window.pageYOffset >= aboutSlideIn) {
+            about.classList.add('slide-in-top');
           }
         })
       }
