@@ -1,61 +1,55 @@
 #page-header {
-  background-color: #A0FCD6;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 100;
-  position: fixed;
-  @include media-breakpoint-up(md) {
-    position: relative;
-    height: $height-header;
-    // &:before {
-    //   content: '';
-    //   position: absolute;
-    //   top: -60%;
-    //   left: 0;
-    //   width: 50%;
-    //   height: 10vw;
-    //   background-color: inherit;
-    //   transform: skewY(7deg);
-    //   z-index: -1;
-    // }
-    // &:after {
-    //   content: '';
-    //   position: absolute;
-    //   top: -60%;
-    //   right: 0;
-    //   width: 50%;
-    //   height: 10vw;
-    //   background-color: inherit;
-    //   transform: skewY(-7deg);
-    // }
-  }
-  &.sticky {
-    @include media-breakpoint-up(md) {
-      position: fixed;
-    }
-  }
-  .mobile-menu-button {
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    z-index: 150;
-    @include media-breakpoint-up(md) {
-      display: none;
-    }
-  }
-  .mobile-menu-closed {
-    display: none;
-    @include media-breakpoint-up(md) {
-      display: flex;
-    }
-  }
-  .mobile-menu-opend {
-    display: flex;
-    flex-direction: column;
-    @include media-breakpoint-up(md) {
-      display: flex;
-      flex-direction: row;
-    }
-  }
+	padding: 0;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 100;
+	position: fixed;
+	@include media-breakpoint-up(md) {
+		position: relative;
+		height: $height-header;
+	}
+	&-menu {
+		background-color: rgba($color-light, 0.9);
+		top: 0;
+		right: 0;
+		left: 0;
+		width: 100%;
+		z-index: 100;
+		margin-top: 0;
+		margin-bottom: 0;
+		@include media-breakpoint-up(md) {
+			height: $height-header;
+		}
+		&.sticky {
+			@include media-breakpoint-up(md) {
+				position: fixed;
+
+			}
+		}
+	}
+
+	.mobile-menu-button {
+		display: inline-block;
+		position: absolute;
+		right: 0;
+		z-index: 150;
+		@include media-breakpoint-up(md) {
+			display: none;
+		}
+	}
+	.mobile-menu {
+		display: flex;
+		flex-direction: column;
+		@include media-breakpoint-up(md) {
+			flex-direction: row;
+			align-items: flex-end;
+		}
+		&-closed {
+			display: none;
+			@include media-breakpoint-up(md) {
+				display: flex;
+			}
+		}
+	}
 }

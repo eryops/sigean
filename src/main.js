@@ -23,7 +23,7 @@ Vue.use(VueScrollTo, {
 })
 
 import BootstrapVue from 'bootstrap-vue'
-Vue.use(BootstrapVue)
+Vue.use(BootstrapVue);
 
 /* eslint-disable no-new */
 new Vue({

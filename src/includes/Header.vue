@@ -7,33 +7,38 @@
       <span class="icon-menu-opend" v-if="mobileMenuOpend">Öppen</span>
       <span class="icon-menu-closed" v-else>Stängd</span>
     </button>
-    <nav :class="mobileMenuOpend ? 'mobile-menu-opend' : 'mobile-menu-closed'" class="content">
-      <a href="#app"
-         v-scroll-to="'#app'"
-         @click="mobileMenuOpend = !mobileMenuOpend">
+    <b-nav pills
+           v-b-scrollspy
+           :class="{'mobile-menu-closed': !mobileMenuOpend}"
+		   class="container mobile-menu"
+		   id="page-header-menu">
+      <b-nav-item href="#app"
+                  v-scroll-to="'#app'"
+                  @click="mobileMenuOpend = !mobileMenuOpend">
         Start
-      </a>
-      <a href="#about"
-         v-scroll-to="'#about'"
-         @click="mobileMenuOpend = !mobileMenuOpend">
+      </b-nav-item>
+      <b-nav-item href="#about"
+                  v-scroll-to="'#about'"
+                  @click="mobileMenuOpend = !mobileMenuOpend">
         Om huset
-      </a>
-      <a href="#imgHouse"
-         v-scroll-to="'#imgHouse'"
-         @click="mobileMenuOpend = !mobileMenuOpend">
+      </b-nav-item>
+      <b-nav-item href="#imgHouse"
+                  v-scroll-to="'#imgHouse'"
+                  @click="mobileMenuOpend = !mobileMenuOpend">
         Foton på huset
-      </a>
-      <a href="#imgSurandings"
-         v-scroll-to="'imgSurandings'"
-         @click="mobileMenuOpend = !mobileMenuOpend">
+      </b-nav-item>
+      <b-nav-item href="#imgSurandings"
+                  v-scroll-to="'imgSurandings'"
+                  @click="mobileMenuOpend = !mobileMenuOpend">
         Foton på omgivning
-      </a>
-      <a href="#map"
-         v-scroll-to="'#map'"
-         @click="mobileMenuOpend = !mobileMenuOpend">
+      </b-nav-item>
+      <b-nav-item href="#map"
+                  v-scroll-to="'#map'"
+                  @click="mobileMenuOpend = !mobileMenuOpend">
         Karta
-      </a>
-    </nav>
+      </b-nav-item>
+    </b-nav>
+
   </header>
 </template>
 <script>
