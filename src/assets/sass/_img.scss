@@ -1,22 +1,26 @@
-.bg-m-fixed {
-  @include media-breakpoint-up(md) {
-    background-attachment: fixed;
-  }
-}
-.bg-img-cover {
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom
-}
-.bg-hero {
-  background-image: url('./assets/img/start.jpg');
-}
-.bg-about {
-  background-image: url('./assets/img/torghanel.jpg');
-  min-height: 100%;
-  width: 100%;
-}
 img {
-  max-width: 100%;
+	max-width: 100%;
+}
+.bg {
+	&-m-fixed {
+		@include media-breakpoint-up(md) {
+			background-attachment: fixed;
+		}
+	}
+	&-img-cover {
+		height: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: bottom;
+		display: flex;
+		justify-content: center;
+	}
+	&-hero {
+		background-image: url('./assets/img/start.jpg');
+	}
+	&-about {
+		background-image: url('./assets/img/torghanel.jpg');
+		min-height: 100%;
+		width: 100%;
+	}
 }

@@ -47,8 +47,8 @@ $grid-gutter-width: 1.875rem;
  End Bootstrap variables
 */
 
-$font-headlines: 'Courgette', cursive;
-$font-base: 'Play', sans-serif;
+$font-base: 'Quicksand', sans-serif;
+$font-headlines: $font-base;
 
 $space: $grid-gutter-width/2;
 
@@ -56,7 +56,7 @@ $color-font: #18191b;
 $color-light: #fff;
 $color-dark: #000;
 
-$height-header: 6rem;
+$height-header: 2rem;
 
 //icons
 $chevron-size: 1.5rem;
