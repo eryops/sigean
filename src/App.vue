@@ -1,7 +1,8 @@
 <template>
-  <div id="app" :scroll.passive="stickyMenu">
+  <div id="app">
     <s-hero/>
 	  <i-header/>
+    <s-house/>
     <s-about/>
 	  <i-footer/>
   </div>
@@ -13,6 +14,7 @@
 import IHeader 	from './includes/Header.vue';
 import IFooter 	from './includes/Footer.vue';
 import SHero 	from './sections/Hero.vue';
+import SHouse 	from './sections/House.vue';
 import SAbout	from './sections/About.vue';
 
 
@@ -27,6 +29,7 @@ export default {
 		IHeader,
 		IFooter,
 		SHero,
+		SHouse,
 		SAbout
 	},
 	methods: {
@@ -34,9 +37,11 @@ export default {
 			var pageHeader   	= document.getElementById('page-header');
 			var pageHeaderMenu  = document.getElementById('page-header-menu');
 			var about        	= document.getElementById('about');
-			var aboutSlideIn 	= about.offsetTop - (window.innerHeight - 150);
+			var aboutText       = document.getElementById('about-text');
+			var aboutSlideIn 	= about.offsetTop - (window.innerHeight - 250);
 			var sticky       	= pageHeader.offsetTop;
 			var pageYOffset	 	= window.pageYOffset;
+			console.log('about.offsetTop' + about.offsetTop);
 
 			if(pageYOffset > sticky) {
 				pageHeaderMenu.classList.add('sticky');
@@ -45,7 +50,8 @@ export default {
 				pageHeaderMenu.classList.remove('sticky');
 			}
 			if(pageYOffset >= aboutSlideIn) {
-				about.classList.add('slide-in-top');
+				console.log('about slinging in');
+				aboutText.classList.add('slide-in-top');
 			}
 		}
 	},

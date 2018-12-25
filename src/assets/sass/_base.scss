@@ -20,12 +20,11 @@ body {
 #app {
   position: relative;
 }
-.container {
-  box-sizing:border-box;
+.justify-end {
+	justify-content: flex-end;
 }
-
-.information {
-  @include media-breakpoint-up(sm) {
-    max-width: 60%;
-  }
+.bg-white {
+	padding: $space*2;
+	background-color: rgba($color-light, 0.9);
+	border-radius: 0.3rem;
 }

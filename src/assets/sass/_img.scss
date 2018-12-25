@@ -13,14 +13,17 @@ img {
 		background-size: cover;
 		background-position: bottom;
 		display: flex;
-		justify-content: center;
+		align-items: center;
+		padding: $space 0;
+		@include media-breakpoint-up(md) {
+			min-height: 100vh;
+			padding: $space*2 0;
+		}
 	}
 	&-hero {
 		background-image: url('./assets/img/start.jpg');
 	}
 	&-about {
 		background-image: url('./assets/img/torghanel.jpg');
-		min-height: 100%;
-		width: 100%;
 	}
 }

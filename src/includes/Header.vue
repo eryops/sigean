@@ -10,22 +10,22 @@
     <b-nav pills
            v-b-scrollspy
            :class="{'mobile-menu-closed': !mobileMenuOpend}"
-		   class="container mobile-menu"
+		   class="mobile-menu"
 		   id="page-header-menu">
       <b-nav-item href="#app"
                   v-scroll-to="'#app'"
                   @click="mobileMenuOpend = !mobileMenuOpend">
         Start
       </b-nav-item>
+	  <b-nav-item href="#house"
+                  v-scroll-to="'#house'"
+                  @click="mobileMenuOpend = !mobileMenuOpend">
+        Huset
+      </b-nav-item>
       <b-nav-item href="#about"
                   v-scroll-to="'#about'"
                   @click="mobileMenuOpend = !mobileMenuOpend">
-        Om huset
-      </b-nav-item>
-      <b-nav-item href="#imgHouse"
-                  v-scroll-to="'#imgHouse'"
-                  @click="mobileMenuOpend = !mobileMenuOpend">
-        Foton på huset
+        Om
       </b-nav-item>
       <b-nav-item href="#imgSurandings"
                   v-scroll-to="'imgSurandings'"

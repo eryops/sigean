@@ -1,20 +1,6 @@
 #hero {
-  height: 75vw;
-  z-index: 1;
-  position: relative;
-  .content {
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    padding: 0;
-    box-sizing: border-box;
-    @include media-breakpoint-up(md) {
-      justify-content: flex-end;
-    }
-  }
-  @include media-breakpoint-up(md) {
-    height: 100vh;
-  }
+	position: relative;
+	.intro {
+		opacity: 0;
+	}
 }
