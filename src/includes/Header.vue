@@ -1,6 +1,6 @@
 <template>
   <header id="page-header">
-    <button type="button"
+    <button	type="button"
             class="mobile-menu-button"
             title="Öppna menyn"
             @click="mobileMenuOpend = !mobileMenuOpend">
@@ -22,12 +22,12 @@
                   @click="mobileMenuOpend = !mobileMenuOpend">
         Huset
       </b-nav-item>
-      <b-nav-item href="#about"
-                  v-scroll-to="'#about'"
+      <b-nav-item href="#about-town"
+                  v-scroll-to="'#about-town'"
                   @click="mobileMenuOpend = !mobileMenuOpend">
-        Om
+        Om staden
       </b-nav-item>
-      <b-nav-item href="#imgSurandings"
+      <!-- <b-nav-item href="#imgSurandings"
                   v-scroll-to="'imgSurandings'"
                   @click="mobileMenuOpend = !mobileMenuOpend">
         Foton på omgivning
@@ -36,7 +36,7 @@
                   v-scroll-to="'#map'"
                   @click="mobileMenuOpend = !mobileMenuOpend">
         Karta
-      </b-nav-item>
+      </b-nav-item> -->
     </b-nav>
 
   </header>
