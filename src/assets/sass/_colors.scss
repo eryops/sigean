@@ -1,0 +1,30 @@
+.blue {
+	color: #007bff;
+	&-bg {
+		background-color: #007bff;
+	}
+	&-before {
+		&-corner {
+			&.tl {
+				&:before {
+					border-color: #007bff transparent transparent transparent;
+				}
+			}
+			&.tr {
+				&:before {
+					border-color: transparent #007bff transparent transparent;
+				}
+			}
+			&.br {
+				&:before {
+					border-color: transparent transparent #007bff transparent;
+				}
+			}
+			&.bl {
+				&:before {
+					border-color: transparent transparent transparent #007bff;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+.flipper {
+	perspective: 1000;
+	transform-style: preserve-3d;
+	&-card {
+		transform-style: preserve-3d;
+		cursor: pointer;
+		&:hover {
+			.back {
+				transform: rotateY(0deg);
+			}
+			.front {
+			    transform: rotateY(180deg);
+			}
+		}
+		.front,
+		.back {
+			backface-visibility: hidden;
+			transition: 1s;
+			transform-style: preserve-3d;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.front {
+			z-index: 2;
+			transform: rotateY(0deg);
+		}
+		.back {
+			transform: rotateY(-180deg);
+		}
+	}
+}

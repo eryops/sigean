@@ -23,7 +23,14 @@ img {
 	&-hero {
 		background-image: url('./assets/img/start.jpg');
 	}
-	&-about {
+	&-about-town {
 		background-image: url('./assets/img/torghanel.jpg');
+	}
+	&-img {
+		&-component {
+			&-terrace {
+				background-image: url('./assets/img/terrace.jpg');
+			}
+		}
 	}
 }
