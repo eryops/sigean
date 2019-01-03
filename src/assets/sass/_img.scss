@@ -49,6 +49,28 @@ img {
 					background-position: bottom;
 				}
 			}
+			&-bathroom {
+				&-shower {
+					background-image: url('./assets/img/house/1/shower.jpg');
+					background-position: center;
+				}
+				&-toilet {
+					background-image: url('./assets/img/house/1/toilet.jpg');
+					background-position: center;
+				}
+			}
+			&-kitchen {
+				background-image: url('./assets/img/house/1/kitchen.jpg');
+				background-position: center;
+			}
+			&-diningplace {
+				background-image: url('./assets/img/house/1/diningplace.jpg');
+				background-position: center;
+			}
+			&-livingroom {
+				background-image: url('./assets/img/house/1/livingroom.jpg');
+				background-position: center;
+			}
 		}
 	}
 }

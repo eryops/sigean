@@ -1,6 +1,6 @@
 <template>
 	<div :class="{ 'flipper': imgText }" v-if="bgImg">
-		<div :class="[{ 'flipper-card': imgText }, 'image-component-container', imgRatio]">
+		<div :class="[{ 'flipper-card': imgText }, 'image-component-container', 'ratio-' + imgRatio]">
 			<div :class="[bgImg, { 'front': imgText },'image-component']">
 				<h3 v-if="imgTitle" :class="[color + '-before-corner', imgTitlePos, 'img-per-row-' + imgPerRow]">{{ imgTitle }}</h3>
 			</div>
@@ -17,7 +17,7 @@ export default {
 			default: () => false
 		},
 		imgRatio: {
-			default: () => 'ratio-16-9'
+			default: () => '16-9'
 		},
 		imgTitle: {
 			default: () => false
@@ -98,13 +98,24 @@ export default {
 						border-width: 4rem 21rem 0 0;
 					}
 				}
-				@include media-breakpoint-up(lg) {
-					&.img-per-row-3 {
-						&:before {
+				&.img-per-row-3 {
+					&:before {
+						@include media-breakpoint-up(lg) {
 							border-width: 5vw 24vw 0 0;
 						}
 					}
 				}
+				&.img-per-row-4 {
+					&:before {
+						@include media-breakpoint-up(lg) {
+							border-width: 6.5vw 22vw 0 0;
+						}
+						@include media-breakpoint-up(xl) {
+							border-width: 4rem 15rem 0 0;
+						}
+					}
+				}
+
 			}
 			&.tr {
 				top: 0;
@@ -122,13 +133,24 @@ export default {
 						border-width: 0 21rem 4rem 0;
 					}
 				}
-				@include media-breakpoint-up(lg) {
-					&.img-per-row-3 {
-						&:before {
+				&.img-per-row-3 {
+					&:before {
+						@include media-breakpoint-up(lg) {
 							border-width: 0 24vw 5vw 0;
 						}
 					}
 				}
+				&.img-per-row-4 {
+					&:before {
+						@include media-breakpoint-up(lg) {
+							border-width: 0 6.5vw 22vw 0;
+						}
+						@include media-breakpoint-up(xl) {
+							border-width: 0 4rem 15rem;
+						}
+					}
+				}
+
 			}
 			&.br {
 				bottom: 0;
@@ -146,13 +168,24 @@ export default {
 						border-width: 0 0 4rem 21rem;
 					}
 				}
-				@include media-breakpoint-up(lg) {
-					&.img-per-row-3  {
-						&:before {
+				&.img-per-row-3  {
+					&:before {
+						@include media-breakpoint-up(lg) {
 							border-width: 0 0 5vw 24vw;
 						}
 					}
 				}
+				&.img-per-row-4 {
+					&:before {
+						@include media-breakpoint-up(lg) {
+							border-width: 0 0 6.5vw 22vw;
+						}
+						@include media-breakpoint-up(lg) {
+							border-width: 0 0 4rem 15rem;
+						}
+					}
+				}
+
 			}
 			&.bl {
 				bottom: 0;
@@ -170,10 +203,20 @@ export default {
 						border-width: 4rem 0 0 21rem;
 					}
 				}
-				@include media-breakpoint-up(lg) {
-					&.img-per-row-3  {
-						&:before {
+				&.img-per-row-3  {
+					&:before {
+						@include media-breakpoint-up(lg) {
 							border-width: 5vw 0 0 24vw;
+						}
+					}
+				}
+				&.img-per-row-4 {
+					&:before {
+						@include media-breakpoint-up(lg) {
+							border-width: 6.5vw 0 0 22vw;
+						}
+						@include media-breakpoint-up(xl) {
+							border-width: 4rem 0 0 15rem;
 						}
 					}
 				}
