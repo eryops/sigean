@@ -4,6 +4,7 @@
 	  <i-header/>
     <s-house/>
     <s-about-town/>
+    <s-contact/>
 	  <i-footer/>
   </div>
 </template>
@@ -14,9 +15,10 @@
 import IHeader 	from '@/includes/Header.vue';
 import IFooter 	from '@/includes/Footer.vue';
 
-import SHero 	from '@/sections/Hero.vue';
-import SHouse 	from '@/sections/House.vue';
+import SHero 		from '@/sections/Hero.vue';
+import SHouse 		from '@/sections/House.vue';
 import SAboutTown	from '@/sections/AboutTown.vue';
+import SContact		from '@/sections/Contact.vue';
 
 
 export default {
@@ -31,7 +33,8 @@ export default {
 		IFooter,
 		SHero,
 		SHouse,
-		SAboutTown
+		SAboutTown,
+		SContact
 	},
 	methods: {
 		scrollEvents() {

@@ -27,6 +27,11 @@
                   @click="mobileMenuOpend = !mobileMenuOpend">
         Om staden
       </b-nav-item>
+      <b-nav-item href="#contact"
+                  v-scroll-to="'#contact'"
+                  @click="mobileMenuOpend = !mobileMenuOpend">
+        Kontakt
+      </b-nav-item>
       <!-- <b-nav-item href="#imgSurandings"
                   v-scroll-to="'imgSurandings'"
                   @click="mobileMenuOpend = !mobileMenuOpend">
