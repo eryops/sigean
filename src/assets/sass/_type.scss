@@ -1,87 +1,56 @@
 h1, h2, h3, h4, h5, h6 {
-  font-family: $font-headlines;
-  transition: opacity 0.5s ease-in-out;
-  line-height: 1.5;
-  font-weight: 700;
-  a:hover & {
-    opacity: 0.5;
-  }
+	font-family: $font-headlines;
+	transition: opacity 0.5s ease-in-out;
+	line-height: 1.5;
+	font-weight: 700;
+	a:hover & {
+		opacity: 0.5;
+	}
 }
+
 p {
 	margin: 0;
+	padding-bottom: 0.5rem;
 }
+
 a {
-  text-decoration: none;
-  color: inherit;
-  font: inherit;
-  font-weight: 500;
-  transition: opacity 0.5s ease-in-out;
-  &:hover {
-    opacity: 0.5;
-  }
+	text-decoration: none;
+	color: inherit;
+	font: inherit;
+	font-weight: 500;
+	transition: opacity 0.5s ease-in-out;
+	&:hover {
+		opacity: 0.5;
+	}
 }
+
 em {
-  font-size: 0.9rem;
+	font-size: inherit;
 }
+
 ol, ul {
 	list-style: none;
-  li {
-    color: inherit;
-    font: inherit;
-  }
+	li {
+		color: inherit;
+		font: inherit;
+	}
 }
-h1 {
-  font-size: 8vw;
-  color: red;
-  @include media-breakpoint-up(md) {
-    font-size: 2rem;
-    padding-bottom: 33vh;
-  }
-}
+
 h2 {
-  font-size: 5vw;
-  padding-bottom: $space;
-  margin: 0;
-  @include media-breakpoint-up(sm) {
-    font-size: 2.2rem;
-  }
-}
-h3 {
-  font-size: 5vw;
-  @include media-breakpoint-up(sm) {
-    font-size: 1.5rem;
-  }
-}
-.knowledge-list {
-  min-width: 35%;
-}
-.knowledge {
-  line-height: 2rem;
-  display: block;
-  margin-top: $space;
-  width: 60%;
-  background-color: rgba(#00c42b, 0.5);
-  padding-left: $space;
-  &.bigger {
-    width: 90%;
-  }
-  &.big {
-    width: 75%;
-  }
-  &.small {
-    width: 45%;
-  }
-  &.smaller {
-    width: 30%;
-  }
+	font-size: 5vw;
+	padding-bottom: $space;
+	margin: 0;
+	@include media-breakpoint-up(sm) {
+		font-size: 2.2rem;
+	}
 }
 
 .text-center {
-  text-align: center;
+	text-align: center;
 }
 .text-left {
-  text-align: left;
+	text-align: left;
 }
 .text-right {
-  text-align: right;
+	text-align: right;
 }

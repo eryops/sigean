@@ -11,7 +11,6 @@ img {
 		height: 100%;
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-position: bottom;
 		display: flex;
 		align-items: center;
 		padding: $space 0;
@@ -22,14 +21,33 @@ img {
 	}
 	&-hero {
 		background-image: url('./assets/img/start.jpg');
+		background-position: bottom;
 	}
 	&-about-town {
-		background-image: url('./assets/img/torghanel.jpg');
+		background-image: url('./assets/img/town/torghanel.jpg');
+		@include media-breakpoint-up(md) {
+			min-height: calc(100vh + 7vw);
+		}
 	}
 	&-img {
 		&-component {
 			&-terrace {
-				background-image: url('./assets/img/terrace.jpg');
+				background-image: url('./assets/img/house/4/terrace.jpg');
+				&-view {
+					background-image: url('./assets/img/house/4/terrace-view.jpg');
+					background-position: bottom, right;
+				}
+				&-indoor {
+					background-image: url('./assets/img/house/4/terrace-indoor.jpg');
+					background-position: top, left;
+				}
+			}
+			&-entrence {
+				background-image: url('./assets/img/house/1/entrence.jpg');
+				&-yard {
+					background-image: url('./assets/img/house/1/yard.jpg');
+					background-position: bottom;
+				}
 			}
 		}
 	}

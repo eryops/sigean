@@ -1,5 +1,5 @@
 <template>
-  <div id="hero">
+  <section id="hero">
     <div class="bg-img-cover bg-m-fixed bg-hero">
       <div class="container">
         <b-row>
@@ -16,5 +16,5 @@
 
       </div>
     </div>
-  </div>
+</section>
 </template>

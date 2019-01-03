@@ -5,13 +5,24 @@
 	left: 0;
 	z-index: 100;
 	position: fixed;
-	background-color: #080808;
+	background-color: $color-orange;
+
 	@include media-breakpoint-up(md) {
 		position: relative;
-		height: $height-header;
+		height: 7vw;
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: -3vw;
+			left: 0;
+			width: 100%;
+			height: 7vw;
+			background-color: inherit;
+			transform: skewY(-3deg);
+			z-index: 0;
+		}
 	}
 	&-menu {
-		background-color: rgba(#080808, 0.9);
 		top: 0;
 		right: 0;
 		left: 0;
@@ -21,11 +32,13 @@
 		margin-bottom: 0;
 		@include media-breakpoint-up(md) {
 			height: $height-header;
+			position: relative;
+			z-index: 1;
 		}
 		&.sticky {
 			@include media-breakpoint-up(md) {
 				position: fixed;
-
+				background-color: rgba($color-orange, 0.9);
 			}
 		}
 		.nav {
@@ -36,11 +49,11 @@
 				display: flex;
 				align-items: flex-end;
 				height: 100%;
-				color: #694381;
+				color: $color-font;
 				padding-right: $space;
 				padding-bottom: $space/2;
 				&.active {
-					color: #8d179c;
+					color: $color-dark;
 				}
 			}
 		}

@@ -1,5 +1,5 @@
 <template>
-	<div id="about-town" class="bg-img-cover bg-m-fixed bg-about-town">
+	<section id="about-town" class="bg-img-cover bg-m-fixed bg-about-town">
 		<div class="container">
 			<b-row class="justify-end">
 				<b-col cols="12" md="8" lg="6" xl="4">
@@ -21,5 +21,5 @@
 				</b-col>
 			</b-row>
 		</div>
-	</div>
+	</section>
 </template>

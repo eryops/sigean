@@ -28,3 +28,33 @@
 		}
 	}
 }
+.orange {
+	color: $color-orange;
+	&-bg {
+		background-color: $color-orange;
+	}
+	&-before {
+		&-corner {
+			&.tl {
+				&:before {
+					border-color: $color-orange transparent transparent transparent;
+				}
+			}
+			&.tr {
+				&:before {
+					border-color: transparent $color-orange transparent transparent;
+				}
+			}
+			&.br {
+				&:before {
+					border-color: transparent transparent $color-orange transparent;
+				}
+			}
+			&.bl {
+				&:before {
+					border-color: transparent transparent transparent $color-orange;
+				}
+			}
+		}
+	}
+}
