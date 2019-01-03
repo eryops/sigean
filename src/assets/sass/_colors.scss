@@ -7,22 +7,22 @@
 		&-corner {
 			&.tl {
 				&:before {
-					border-color: #007bff transparent transparent transparent;
+					border-color: rgba(#007bff, 0.8) transparent transparent transparent;
 				}
 			}
 			&.tr {
 				&:before {
-					border-color: transparent #007bff transparent transparent;
+					border-color: transparent rgba(#007bff, 0.8) transparent transparent;
 				}
 			}
 			&.br {
 				&:before {
-					border-color: transparent transparent #007bff transparent;
+					border-color: transparent transparent rgba(#007bff, 0.8) transparent;
 				}
 			}
 			&.bl {
 				&:before {
-					border-color: transparent transparent transparent #007bff;
+					border-color: transparent transparent transparent rgba(#007bff, 0.8);
 				}
 			}
 		}
@@ -37,22 +37,22 @@
 		&-corner {
 			&.tl {
 				&:before {
-					border-color: $color-orange transparent transparent transparent;
+					border-color: rgba($color-orange, 0.8) transparent transparent transparent;
 				}
 			}
 			&.tr {
 				&:before {
-					border-color: transparent $color-orange transparent transparent;
+					border-color: transparent rgba($color-orange, 0.8) transparent transparent;
 				}
 			}
 			&.br {
 				&:before {
-					border-color: transparent transparent $color-orange transparent;
+					border-color: transparent transparent rgba($color-orange, 0.8) transparent;
 				}
 			}
 			&.bl {
 				&:before {
-					border-color: transparent transparent transparent $color-orange;
+					border-color: transparent transparent transparent rgba($color-orange, 0.8);
 				}
 			}
 		}
