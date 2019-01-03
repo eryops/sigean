@@ -30,7 +30,7 @@
       <b-nav-item href="#contact"
                   v-scroll-to="'#contact'"
                   @click="mobileMenuOpend = !mobileMenuOpend">
-        Kontakt
+        Kontakta oss
       </b-nav-item>
       <!-- <b-nav-item href="#imgSurandings"
                   v-scroll-to="'imgSurandings'"
