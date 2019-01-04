@@ -2,7 +2,7 @@
 	<footer class="page-footer">
 		<div class="container text-center">
 			<p>Webbplatsen är skapad av <a href="mailto:johanna.liljecrantz@gmail.com">Johanna Liljecrantz</a></p>
-			<p>Webbplatsen är skyddad under upphovsrättslagen och inget matrial på webbplasten får användas utan tillåtelse.</p>
+			<p>Webbplatsen är skyddad under upphovsrättslagen och inget material på webbplatsen får användas utan tillåtelse.</p>
 		</div>
 	</footer>
 </template>

@@ -10,15 +10,15 @@
 				</b-col>
 				<b-col cols="12" md="6" lg="4">
 					<c-image 	bgImg="bg-img-component-entrence-yard"
-								imgTitle="Innegården"
+								imgTitle="Innergården"
 								imgTitlePos="tl"
-								imgText="Över innegården slingrar det sig vinrankor."/>
+								imgText="Över innergården slingrar det sig vinrankor."/>
 				</b-col>
 				<b-col cols="12" md="6" lg="4">
 					<c-image 	bgImg="bg-img-component-livingroom"
 								imgTitle="Vardagsrum"
 								imgTitlePos="br"
-								imgText="Innanför köket, på bottenvångingen finns ett rymligt och bekvämt vardagsrum."/>
+								imgText="Innanför köket, på bottenvåningen finns ett rymligt och bekvämt vardagsrum."/>
 				</b-col>
 			</b-row>
 			<b-row>
@@ -58,42 +58,42 @@
 					<c-image 	bgImg="bg-img-component-bedroom-first"
 								imgTitle="Sovrum"
 								imgTitlePos="br"
-								imgText="Det ena stora sovrummet ligger på andra vångingen."/>
+								imgText="Det ena stora sovrummet ligger på andra våningen."/>
 				</b-col>
 				<b-col cols="12" md="6" lg="4">
 					<c-image 	bgImg="bg-img-component-terrace-second-floor"
 								imgTitle="Terrass"
 								imgTitlePos="br"
-								imgText="Terrassen på andra våningen har utsikt över innegården."/>
+								imgText="Terrassen på andra våningen har utsikt över innergården."/>
 				</b-col>
 				<b-col cols="12" md="6" lg="4">
 					<c-image 	bgImg="bg-img-component-bedroom-second"
 								imgTitle="Sovrum"
 								imgTitlePos="tl"
-								imgText="Det andra stora sovrummet ligger på tredje vångingen."/>
+								imgText="Det andra stora sovrummet ligger på tredje våningen."/>
 				</b-col>
 			</b-row>
 			<b-row>
 				<b-col cols="12" sm="6" lg="4">
 					<c-image 	bgImg="bg-img-component-terrace"
 								imgRatio="8-9"
-								imgTitle="Taktterass"
+								imgTitle="Takterrass"
 								imgTitlePos="br"
-								imgText="På takterassen finns plats för vila och umgänge, med plats för matbord."/>
+								imgText="På takterrassen finns plats för vila och umgänge, med plats för matbord."/>
 				</b-col>
 				<b-col cols="12" sm="6" lg="4">
 					<c-image 	bgImg="bg-img-component-terrace-view"
 								imgRatio="8-9"
 								imgTitle="Utsikt"
 								imgTitlePos="tr"
-								imgText="Utsikt över taken från takterassen."/>
+								imgText="Utsikt över taken från takterrassen."/>
 				</b-col>
 				<b-col cols="12" sm="6" lg="4">
 					<c-image 	bgImg="bg-img-component-terrace-indoor"
 								imgRatio="8-9"
 								imgTitle="Inomhus"
 								imgTitlePos="br"
-								imgText="Takterassen har även en inomhusdel med skjutdörrar i glas så man kan njuta av utsikten även en dag när vädret inte är det bästa."/>
+								imgText="Takterrassen har även en inomhusdel med skjutdörrar i glas så man kan njuta av utsikten även en dag när vädret inte är det bästa."/>
 				</b-col>
 			</b-row>
 		</div>
