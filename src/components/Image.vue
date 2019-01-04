@@ -102,6 +102,9 @@ export default {
 						@include media-breakpoint-up(lg) {
 							border-width: 5vw 24vw 0 0;
 						}
+						@include media-breakpoint-up(xl) {
+							border-width: 4rem 21rem 0 0;
+						}
 					}
 				}
 				&.img-per-row-4 {
@@ -136,6 +139,9 @@ export default {
 					&:before {
 						@include media-breakpoint-up(lg) {
 							border-width: 0 24vw 5vw 0;
+						}
+						@include media-breakpoint-up(xl) {
+							border-width: 0 21rem 4rem 0;
 						}
 					}
 				}
@@ -172,6 +178,9 @@ export default {
 						@include media-breakpoint-up(lg) {
 							border-width: 0 0 5vw 24vw;
 						}
+						@include media-breakpoint-up(xl) {
+							border-width: 0 0 4rem 21rem;
+						}
 					}
 				}
 				&.img-per-row-4 {
@@ -206,6 +215,9 @@ export default {
 					&:before {
 						@include media-breakpoint-up(lg) {
 							border-width: 5vw 0 0 24vw;
+						}
+						@include media-breakpoint-up(xl) {
+							border-width: 4rem 0 0 21rem;
 						}
 					}
 				}

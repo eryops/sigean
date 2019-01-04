@@ -13,7 +13,7 @@
 	    <span class="hamburger-inner"></span>
 	  </span>
     </button>
-    <b-nav pills
+	<b-nav pills
            v-b-scrollspy
            :class="{'mobile-menu-closed': !mobileMenuOpend}"
 		   class="mobile-menu"
@@ -38,17 +38,8 @@
                   @click="mobileMenuOpend = !mobileMenuOpend">
         Kontakta oss
       </b-nav-item>
-      <!-- <b-nav-item href="#imgSurandings"
-                  v-scroll-to="'imgSurandings'"
-                  @click="mobileMenuOpend = !mobileMenuOpend">
-        Foton på omgivning
-      </b-nav-item>
-      <b-nav-item href="#map"
-                  v-scroll-to="'#map'"
-                  @click="mobileMenuOpend = !mobileMenuOpend">
-        Karta
-      </b-nav-item> -->
     </b-nav>
+
 
   </header>
 </template>
