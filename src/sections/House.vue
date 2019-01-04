@@ -54,23 +54,34 @@
 				</b-col>
 			</b-row>
 			<b-row>
-				<b-col cols="12" md="6" lg="4">
+				<b-col cols="12" md="6">
 					<c-image 	bgImg="bg-img-component-bedroom-first"
 								imgTitle="Sovrum"
 								imgTitlePos="br"
+								imgPerRow="2"
 								imgText="Det ena stora sovrummet ligger på andra våningen."/>
 				</b-col>
-				<b-col cols="12" md="6" lg="4">
+				<b-col cols="12" md="6">
 					<c-image 	bgImg="bg-img-component-terrace-second-floor"
 								imgTitle="Terrass"
 								imgTitlePos="br"
+								imgPerRow="2"
 								imgText="Terrassen på andra våningen har utsikt över innergården."/>
 				</b-col>
-				<b-col cols="12" md="6" lg="4">
+			</b-row>
+			<b-row>
+				<b-col cols="12" md="6">
 					<c-image 	bgImg="bg-img-component-bedroom-second"
 								imgTitle="Sovrum"
 								imgTitlePos="tl"
+								imgPerRow="2"
 								imgText="Det andra stora sovrummet ligger på tredje våningen."/>
+				</b-col>
+				<b-col cols="12" md="6">
+					<c-image 	bgImg="bg-img-component-bedroom-extra"
+								imgTitle="Bäddsoffa"
+								imgTitlePos="bl"
+								imgPerRow="2"/>
 				</b-col>
 			</b-row>
 			<b-row>
