@@ -58,3 +58,35 @@
 		}
 	}
 }
+.granit {
+	color: $color-granit;
+	&-bg {
+		background-color: $color-granit;
+		color: $color-font-light;
+	}
+	&-before {
+		&-corner {
+			color: $color-font-light;
+			&.tl {
+				&:before {
+					border-color: rgba($color-granit, 0.9) transparent transparent transparent;
+				}
+			}
+			&.tr {
+				&:before {
+					border-color: transparent rgba($color-granit, 0.9) transparent transparent;
+				}
+			}
+			&.br {
+				&:before {
+					border-color: transparent transparent rgba($color-granit, 0.9) transparent;
+				}
+			}
+			&.bl {
+				&:before {
+					border-color: transparent transparent transparent rgba($color-granit, 0.9);
+				}
+			}
+		}
+	}
+}

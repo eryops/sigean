@@ -2,7 +2,7 @@
   <section id="hero">
     <div class="bg-img-cover bg-m-fixed bg-hero pb-skrew pt-default-2">
       <div class="container">
-        <b-row>
+        <b-row class="justify-end">
 			<b-col cols="12" md="8" lg="6" xl="4">
 				<section class="bg-text-block-light slide-in-top intro">
 					<h2 class="text-center">Vårt franska medelhavshus</h2>

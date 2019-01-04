@@ -30,66 +30,90 @@ img {
 			min-height: calc(100vh + 14vw);
 		}
 	}
+	&-surroundings {
+		min-height: 90vh;
+		background-image: url('./assets/img/outher/vineyard.jpg');
+	}
 	&-img {
 		&-component {
-			&-terrace {
-				background-image: url('./assets/img/house/4/terrace.jpg');
-				&-view {
-					background-image: url('./assets/img/house/4/terrace-view.jpg');
-					background-position: bottom, right;
+			&-house {
+				&-terrace {
+					background-image: url('./assets/img/house/4/terrace.jpg');
+					&-view {
+						background-image: url('./assets/img/house/4/terrace-view.jpg');
+						background-position: bottom, right;
+					}
+					&-indoor {
+						background-image: url('./assets/img/house/4/terrace-indoor.jpg');
+						background-position: top, left;
+					}
+					&-second {
+						&-floor {
+							background-image: url('./assets/img/house/2/terrace-second-floor.jpg');
+							background-position: bottom;
+						}
+					}
 				}
-				&-indoor {
-					background-image: url('./assets/img/house/4/terrace-indoor.jpg');
-					background-position: top, left;
-				}
-				&-second {
-					&-floor {
-						background-image: url('./assets/img/house/2/terrace-second-floor.jpg');
+				&-entrence {
+					background-image: url('./assets/img/house/1/entrence.jpg');
+					&-yard {
+						background-image: url('./assets/img/house/1/yard.jpg');
 						background-position: bottom;
 					}
 				}
-			}
-			&-entrence {
-				background-image: url('./assets/img/house/1/entrence.jpg');
-				&-yard {
-					background-image: url('./assets/img/house/1/yard.jpg');
-					background-position: bottom;
+				&-bathroom {
+					&-shower {
+						background-image: url('./assets/img/house/1/shower.jpg');
+						background-position: center;
+					}
+					&-toilet {
+						background-image: url('./assets/img/house/1/toilet.jpg');
+						background-position: center;
+					}
 				}
-			}
-			&-bathroom {
-				&-shower {
-					background-image: url('./assets/img/house/1/shower.jpg');
+				&-kitchen {
+					background-image: url('./assets/img/house/1/kitchen.jpg');
 					background-position: center;
 				}
-				&-toilet {
-					background-image: url('./assets/img/house/1/toilet.jpg');
+				&-diningplace {
+					background-image: url('./assets/img/house/1/diningplace.jpg');
 					background-position: center;
 				}
-			}
-			&-kitchen {
-				background-image: url('./assets/img/house/1/kitchen.jpg');
-				background-position: center;
-			}
-			&-diningplace {
-				background-image: url('./assets/img/house/1/diningplace.jpg');
-				background-position: center;
-			}
-			&-livingroom {
-				background-image: url('./assets/img/house/1/livingroom.jpg');
-				background-position: center;
-			}
-			&-bedroom {
-				&-first {
-					background-image: url('./assets/img/house/2/master-bedroom.jpg');
+				&-livingroom {
+					background-image: url('./assets/img/house/1/livingroom.jpg');
 					background-position: center;
 				}
-				&-second {
-					background-image: url('./assets/img/house/3/second-bed-room.jpg');
-					background-position: center;
+				&-bedroom {
+					&-first {
+						background-image: url('./assets/img/house/2/master-bedroom.jpg');
+						background-position: center;
+					}
+					&-second {
+						background-image: url('./assets/img/house/3/second-bed-room.jpg');
+						background-position: center;
+					}
+					&-extra {
+						background-image: url('./assets/img/house/3/extra-beed.jpg');
+						background-position: bottom, right;
+					}
 				}
-				&-extra {
-					background-image: url('./assets/img/house/3/extra-beed.jpg');
-					background-position: bottom, right;
+			}
+			&-town {
+				&-church {
+					background-image: url('./assets/img/town/church.jpg');
+					background-position: top, center;
+				}
+				&-rotonde {
+					background-image: url('./assets/img/town/rat.jpg');
+					background-position: left, bottom;
+				}
+				&-store {
+					background-image: url('./assets/img/town/store.jpg');
+					background-position: left, center;
+				}
+				&-center {
+					background-image: url('./assets/img/town/center.jpg');
+					background-position: right, center;
 				}
 			}
 		}

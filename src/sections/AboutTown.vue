@@ -1,7 +1,7 @@
 <template>
 	<section id="about-town" class="bg-img-cover bg-m-fixed bg-about-town pb-skrew pt-skrew">
 		<div class="container">
-			<b-row class="justify-end">
+			<b-row>
 				<b-col cols="12" md="8" lg="6" xl="4">
 					<section id="about-town-text" class="bg-text-block-light">
 						<h2 class="text-center">Sigean</h2>

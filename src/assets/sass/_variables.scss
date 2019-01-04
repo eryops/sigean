@@ -49,11 +49,13 @@ $font-headlines: $font-base;
 
 $space: $grid-gutter-width/2;
 
-$color-font: #313131;
-$color-light: #fff;
-$color-dark: #000;
-$color-orange: #cc6b27;
-$color-blue: #007bff;
+$color-light: 		#fff;
+$color-dark: 		#313131;
+$color-orange: 		#cc6b27;
+$color-blue: 		#007bff;
+$color-granit: 		#41464b;
+$color-font: 		$color-dark;
+$color-font-light: 	#e2c28c;
 
 $height-header: 3rem;
 

@@ -5,10 +5,10 @@
 	}
 }
 
-#house {
+#house,
+#town {
 	position: relative;
 	background-color: $color-light;
-	padding-top: 5vw;
 	&:before {
 		content: '';
 		position: absolute;
@@ -32,11 +32,14 @@
 		z-index: 0;
 	}
 	.container {
-		padding-bottom: $space;
-		padding-top: $space;
+		padding-bottom: $space*2;
+		padding-top: $space*2;
 		z-index: 1;
 		position: relative;
 	}
+}
+#house {
+	padding-top: calc(5vw + #{$space});
 }
 
 #about {
@@ -63,10 +66,15 @@
 		z-index: 1;
 	}
 	.container {
-		height: 17rem;
+		z-index: 1;
+		position: relative;
+		padding-top: $space*2;
+		padding-bottom: $space*2;
 		display: flex;
-		justify-content: center;
 		align-items: center;
 		flex-direction: column;
+		@include media-breakpoint-up(md) {
+			padding-bottom: 3.5rem;
+		}
 	}
 }

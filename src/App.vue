@@ -4,6 +4,8 @@
 	  <i-header/>
     <s-house/>
     <s-about-town/>
+    <s-town/>
+    <s-surroundings/>
     <s-contact/>
 	  <i-footer/>
   </div>
@@ -15,10 +17,12 @@
 import IHeader 	from '@/includes/Header.vue';
 import IFooter 	from '@/includes/Footer.vue';
 
-import SHero 		from '@/sections/Hero.vue';
-import SHouse 		from '@/sections/House.vue';
-import SAboutTown	from '@/sections/AboutTown.vue';
-import SContact		from '@/sections/Contact.vue';
+import SHero 			from '@/sections/Hero.vue';
+import SHouse 			from '@/sections/House.vue';
+import SAboutTown		from '@/sections/AboutTown.vue';
+import STown			from '@/sections/Town.vue';
+import SSurroundings	from '@/sections/Surroundings.vue';
+import SContact			from '@/sections/Contact.vue';
 
 
 export default {
@@ -34,6 +38,8 @@ export default {
 		SHero,
 		SHouse,
 		SAboutTown,
+		STown,
+		SSurroundings,
 		SContact
 	},
 	methods: {
