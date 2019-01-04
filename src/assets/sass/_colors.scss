@@ -1,28 +1,28 @@
 .blue {
-	color: #007bff;
+	color: $color-blue;
 	&-bg {
-		background-color: #007bff;
+		background-color: $color-blue;
 	}
 	&-before {
 		&-corner {
 			&.tl {
 				&:before {
-					border-color: rgba(#007bff, 0.8) transparent transparent transparent;
+					border-color: rgba($color-blue, 0.8) transparent transparent transparent;
 				}
 			}
 			&.tr {
 				&:before {
-					border-color: transparent rgba(#007bff, 0.8) transparent transparent;
+					border-color: transparent rgba($color-blue, 0.8) transparent transparent;
 				}
 			}
 			&.br {
 				&:before {
-					border-color: transparent transparent rgba(#007bff, 0.8) transparent;
+					border-color: transparent transparent rgba($color-blue, 0.8) transparent;
 				}
 			}
 			&.bl {
 				&:before {
-					border-color: transparent transparent transparent rgba(#007bff, 0.8);
+					border-color: transparent transparent transparent rgba($color-blue, 0.8);
 				}
 			}
 		}

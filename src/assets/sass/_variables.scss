@@ -37,7 +37,7 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:      12;
-$grid-gutter-width: 1.875rem;
+$grid-gutter-width: 1rem;
 
 
 /*
@@ -53,6 +53,7 @@ $color-font: #313131;
 $color-light: #fff;
 $color-dark: #000;
 $color-orange: #cc6b27;
+$color-blue: #007bff;
 
 $height-header: 3rem;
 

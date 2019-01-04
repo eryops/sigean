@@ -7,16 +7,17 @@ img {
 			background-attachment: fixed;
 		}
 	}
-	&-img-cover {
-		height: 100%;
-		background-repeat: no-repeat;
-		background-size: cover;
-		display: flex;
-		align-items: center;
-		padding: $space 0;
-		@include media-breakpoint-up(md) {
-			min-height: 100vh;
-			padding: $space*2 0;
+	&-img {
+		&-cover {
+			height: 100%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			display: flex;
+			align-items: center;
+			@include media-breakpoint-up(md) {
+				min-height: 100vh;
+				padding: $space*2 0;
+			}
 		}
 	}
 	&-hero {
@@ -40,6 +41,12 @@ img {
 				&-indoor {
 					background-image: url('./assets/img/house/4/terrace-indoor.jpg');
 					background-position: top, left;
+				}
+				&-second {
+					&-floor {
+						background-image: url('./assets/img/house/2/terrace-second-floor.jpg');
+						background-position: bottom;
+					}
 				}
 			}
 			&-entrence {
@@ -70,6 +77,16 @@ img {
 			&-livingroom {
 				background-image: url('./assets/img/house/1/livingroom.jpg');
 				background-position: center;
+			}
+			&-bedroom {
+				&-first {
+					background-image: url('./assets/img/house/2/master-bedroom.jpg');
+					background-position: center;
+				}
+				&-second {
+					background-image: url('./assets/img/house/3/second-bed-room.jpg');
+					background-position: center;
+				}
 			}
 		}
 	}

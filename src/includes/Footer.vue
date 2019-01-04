@@ -16,6 +16,7 @@
 	padding-bottom: $space;
 	p {
 		padding-bottom: 0;
+		font-size: 0.9rem;
 	}
 }
 </style>

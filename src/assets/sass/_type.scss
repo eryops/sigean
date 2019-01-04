@@ -8,6 +8,15 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
+h2 {
+	font-size: 6.5vw;
+	padding-bottom: $space;
+	margin: 0;
+	@include media-breakpoint-up(sm) {
+		font-size: 2.2rem;
+	}
+}
+
 p {
 	margin: 0;
 	padding-bottom: 0.5rem;
@@ -29,19 +38,11 @@ em {
 }
 
 ol, ul {
+	padding: 0;
 	list-style: none;
 	li {
 		color: inherit;
 		font: inherit;
-	}
-}
-
-h2 {
-	font-size: 5vw;
-	padding-bottom: $space;
-	margin: 0;
-	@include media-breakpoint-up(sm) {
-		font-size: 2.2rem;
 	}
 }
 

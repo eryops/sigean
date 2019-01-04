@@ -1,5 +1,5 @@
 <template>
-	<div :class="{ 'flipper': imgText }" v-if="bgImg">
+	<div :class="[{ 'flipper': imgText }, 'pb-default pt-default']" v-if="bgImg">
 		<div :class="[{ 'flipper-card': imgText }, 'image-component-container', 'ratio-' + imgRatio]">
 			<div :class="[bgImg, { 'front': imgText },'image-component']">
 				<h3 v-if="imgTitle" :class="[color + '-before-corner', imgTitlePos, 'img-per-row-' + imgPerRow]">{{ imgTitle }}</h3>
@@ -58,7 +58,6 @@ export default {
 		bottom: 0;
 		&-container {
 			position: relative;
-			margin: 1rem 0;
 		}
 		h3 {
 			margin: 0;
