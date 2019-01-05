@@ -1,5 +1,5 @@
 <template>
-  <header id="page-header">
+  <header id="page-header" :class="{ 'is-active':  mobileMenuOpend}">
     <button	type="button"
             class="mobile-menu-button hamburger hamburger--collapse"
 			:class="{ 'is-active':  mobileMenuOpend}"
