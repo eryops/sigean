@@ -59,11 +59,18 @@
 			&-link {
 				display: flex;
 				align-items: flex-end;
+				justify-content: center;
 				height: 100%;
 				color: $color-font;
-				padding: $space $space*2;
-				@include media-breakpoint-up(lg) {
-					padding: 0 $space $space/2 0
+				padding: $space*2 $space*2 0;
+				font-size: 7vw;
+				@include media-breakpoint-up(sm) {
+					font-size: 5vw;
+				}
+				@include media-breakpoint-up(md) {
+					padding: 0 $space $space/2 0;
+					justify-content: flex-start;
+						font-size: 1.1rem;
 				}
 				&.active {
 					color: $color-granit;
