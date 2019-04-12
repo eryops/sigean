@@ -30,12 +30,12 @@ export default {
         {
             hid: 'og:url',
             property: 'og:url',
-            content: 'sigean.nu'
+            content: 'http://sigean.nu'
         },
         {
             hid: 'og:image',
             property: 'og:image',
-            content: '/static/ogimg.jpg'
+            content: 'http://sigean.nu/ogimg.jpg'
         },
         {
             hid: 'og:description',
