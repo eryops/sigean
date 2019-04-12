@@ -41,6 +41,26 @@ export default {
             hid: 'og:description',
             property: 'og:description',
             content: pkg.description
+        },
+        {
+            hid: 'fb:app_id',
+            property: 'fb:app_id',
+            content: '304249350471096'
+        },
+        {
+            hid: 'og:image:width',
+            property: 'og:image:width',
+            content: '2000'
+        },
+        {
+            hid: 'og:image:height',
+            property: 'og:image:height',
+            content: '1095'
+        },
+        {
+            hid: 'og:type',
+            property: 'og:type',
+            content: 'website'
         }
     ],
     link: [
