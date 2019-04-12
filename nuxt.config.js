@@ -61,6 +61,11 @@ export default {
             hid: 'og:type',
             property: 'og:type',
             content: 'website'
+        },
+        {
+            hid: 'og:image:alt',
+            property: 'og:image:alt',
+            content: 'Utsikt över takåsar'
         }
     ],
     link: [
