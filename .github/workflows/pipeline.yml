@@ -26,10 +26,8 @@ jobs:
         with:
           cmd: build
     
-      - name: Deploy to Azure Storage
-        uses: TravisSpomer/deploy-to-azure-storage@v1.4.0
+      - name: Azure Storage Action
+        uses: lauchacarro/Azure-Storage-Action@v1.1
         with:
-          # The location of your built site files. (For example, "out".)
-          source-path: "dist"
-          # A SAS URL for your storage account. (You should store this in a Secret.)
-          sas-url: "https://sigeannutest.blob.core.windows.net/$web?sp=raw&st=2021-12-18T19:43:29Z&se=2021-12-19T03:43:29Z&spr=https&sv=2020-08-04&sr=c&sig=%2FNRXk1CDeUcDwqR0Gunq%2BqRzWETuZr%2Fr7%2FZ0e6R2ObA%3D"
+          connection-string: "DefaultEndpointsProtocol=https;AccountName=sigeannutest;AccountKey=1QDmhw0Atstkx7ug9bTxeKg9mX1kbShTRZYqo26fgKJjLJz9FVhIiE368XkPtSISYBp5AkkWSnbPjaFe56Hrnw==;EndpointSuffix=core.windows.net"
+          folder: "dist"
