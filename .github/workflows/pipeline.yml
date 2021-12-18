@@ -32,4 +32,4 @@ jobs:
           # The location of your built site files. (For example, "out".)
           source-path: "dist"
           # A SAS URL for your storage account. (You should store this in a Secret.)
-          sas-url: "https://sigeannutest.blob.core.windows.net/$web?sp=r&st=2021-12-18T19:10:42Z&se=2021-12-19T03:10:42Z&spr=https&sv=2020-08-04&sr=c&sig=grPSpj7%2B8xD3ThMEcdS8JCOoDG3EYsTjH%2FSKBvWTQVQ%3D"
+          sas-url: "https://sigeannutest.blob.core.windows.net/$web?sp=raw&st=2021-12-18T19:43:29Z&se=2021-12-19T03:43:29Z&spr=https&sv=2020-08-04&sr=c&sig=%2FNRXk1CDeUcDwqR0Gunq%2BqRzWETuZr%2Fr7%2FZ0e6R2ObA%3D"
