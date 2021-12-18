@@ -1,0 +1,40 @@
+name: Build and Deploy to Sigean.nu
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x, 14.x, 16.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+      - uses: actions/checkout@v2
+    
+      - name: Yarn install
+        uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: install
+
+      - name: Yarn build
+        uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: build
+    
+      - name: Deploy to Azure Storage
+        uses: TravisSpomer/deploy-to-azure-storage@v1.4.0
+        with:
+          # The location of your built site files. (For example, "out".)
+          source-path: "dist"
+          # A SAS URL for your storage account. (You should store this in a Secret.)
+          sas-url: "https://sigeannutest.blob.core.windows.net/$web?sp=r&st=2021-12-18T19:10:42Z&se=2021-12-19T03:10:42Z&spr=https&sv=2020-08-04&sr=c&sig=grPSpj7%2B8xD3ThMEcdS8JCOoDG3EYsTjH%2FSKBvWTQVQ%3D"
