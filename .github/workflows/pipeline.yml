@@ -20,7 +20,10 @@ jobs:
         with:
           node-version: 14
       - run: yarn generate
-
+      
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
       - name: Login to Azure
         uses: azure/login@v1
         with:
@@ -29,6 +32,7 @@ jobs:
       - name: Upload to blob storage
         uses: azure/CLI@v1
         with:
+          azcliversion: 2.30.0
           inlineScript: |
               az storage blob upload-batch --account-name sigeannutest --account-key 1QDmhw0Atstkx7ug9bTxeKg9mX1kbShTRZYqo26fgKJjLJz9FVhIiE368XkPtSISYBp5AkkWSnbPjaFe56Hrnw== --destination "`$web" --source dist              
       
