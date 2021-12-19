@@ -33,7 +33,7 @@ jobs:
         uses: azure/CLI@v1
         with:
           inlineScript: |
-              az storage blob upload-batch --account-name sigeannutest --auth-mode key -d '$web' -s .
+              az storage blob upload-batch --account-name sigeantest --auth-mode key -d '$web' -s .
           
       - name: Azure logout
         run: |
