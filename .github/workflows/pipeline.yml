@@ -4,32 +4,19 @@ on:
   push:
     branches:
       - master
-  pull_request:
-    branches:
-      - master
 
 jobs:
-  prepare:
-    name: Prepare
+  build:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+          
       - uses: DerYeger/yarn-setup-action@master
         with:
           node-version: 14
-  build:
-    runs-on: ubuntu-latest
-    needs: prepare
-    steps:
-      - uses: actions/checkout@v2
-    
-      - name: yarn install
-        uses: DerYeger/yarn-setup-action@master
-        with:
-          node-version: 14
-      - run: yarn build
+      - run: yarn install
       
-      - name: yarn generate
-        uses: DerYeger/yarn-setup-action@master
+      - uses: DerYeger/yarn-setup-action@master
         with:
           node-version: 14
       - run: yarn generate
@@ -37,13 +24,13 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v1
         with:
-            creds: ${{ secrets.AZURE_CREDENTIALS }}
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Upload to blob storage
         uses: azure/CLI@v1
         with:
           inlineScript: |
-              az storage blob upload-batch --account-name sigeannutest --account-key 1QDmhw0Atstkx7ug9bTxeKg9mX1kbShTRZYqo26fgKJjLJz9FVhIiE368XkPtSISYBp5AkkWSnbPjaFe56Hrnw== --destination $web --source dist              
+              az storage blob upload-batch --account-name sigeannutest --account-key 1QDmhw0Atstkx7ug9bTxeKg9mX1kbShTRZYqo26fgKJjLJz9FVhIiE368XkPtSISYBp5AkkWSnbPjaFe56Hrnw== --destination "`$web" --source dist              
       
       - name: Logout from Azure
         run: |
