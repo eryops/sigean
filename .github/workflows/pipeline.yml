@@ -34,7 +34,7 @@ jobs:
         with:
           azcliversion: 2.30.0
           inlineScript: |
-              az storage blob upload-batch --account-name sigeannutest --account-key 1QDmhw0Atstkx7ug9bTxeKg9mX1kbShTRZYqo26fgKJjLJz9FVhIiE368XkPtSISYBp5AkkWSnbPjaFe56Hrnw== --destination "`$web" --source dist              
+              az storage blob upload-batch --account-name sigeannutest --account-key 1QDmhw0Atstkx7ug9bTxeKg9mX1kbShTRZYqo26fgKJjLJz9FVhIiE368XkPtSISYBp5AkkWSnbPjaFe56Hrnw== --destination `$web --source dist              
       
       - name: Logout from Azure
         run: |
