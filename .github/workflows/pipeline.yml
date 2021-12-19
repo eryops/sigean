@@ -29,23 +29,12 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - name: Azure Blob Storage Upload
-        # You may pin to the exact commit or the version.
-        # uses: bacongobbler/azure-blob-storage-upload@779a18b594a1a7cf5412645e06c856324a8b01e5
-        uses: bacongobbler/azure-blob-storage-upload@v1.1.1
+      - name: Upload to blob storage
+        uses: azure/CLI@v1
         with:
-          # The connection string for the storage account
-          connection_string: "DefaultEndpointsProtocol=https;AccountName=sigeannutest;AccountKey=1QDmhw0Atstkx7ug9bTxeKg9mX1kbShTRZYqo26fgKJjLJz9FVhIiE368XkPtSISYBp5AkkWSnbPjaFe56Hrnw==;EndpointSuffix=core.windows.net"
-          # The name of the storage account container these assets will be uploaded to
-          container_name: "$web"
-          # The name of the directory you want to upload
-          source_dir: "dist"
-          # Extra arguments that can be passed to `az storage blob upload-batch|sync`. Useful for passing flags like `--pattern` or `--destination-path`
-          #extra_args: # optional
-          # Use `az storage blob sync` to synchronize blobs recursively
-          #sync: # optional
+          inlineScript: |
+              az storage blob upload-batch --account-name sigeannutest --auth-mode key -d '$web' -s .
           
-      
       - name: Logout from Azure
         run: |
               az logout
