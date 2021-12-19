@@ -34,7 +34,7 @@ jobs:
         uses: azure/CLI@v1
         with:
           inlineScript: |
-              az storage blob upload-batch --account-name sigeantest --account-key SPs1doOFes4UJnWRy7BlL66TQhPg/Vf+fx0jf1sRoQN2ayDITJbohxz/66eXh1H1aP21VSK3l+dbm717RgRkFA== -d '$web' -s 'dist'
+              az storage blob upload-batch --account-name sigeantest --account-key SPs1doOFes4UJnWRy7BlL66TQhPg/Vf+fx0jf1sRoQN2ayDITJbohxz/66eXh1H1aP21VSK3l+dbm717RgRkFA== -d '$web' -s .
           
       - name: Azure logout
         run: |
