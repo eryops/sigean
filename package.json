@@ -15,7 +15,7 @@
     "bootstrap-vue": "^2.0.0-rc.11",
     "cross-env": "^5.2.0",
     "node": "^17.3.0",
-    "nuxt": "^2.4.0"
+    "nuxt": "^3.21.7"
   },
   "devDependencies": {
     "hamburgers": "^1.1.3",
